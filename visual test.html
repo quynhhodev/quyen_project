@@ -1,0 +1,154 @@
+<html lang="en">
+    <head>
+        <style>
+            body {
+                margin: 0;
+                background-color: lightblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: yellow;
+                max-width: auto;
+
+            }
+            .navbar{
+                margin-inline-start: 20%;
+                max-width: auto;
+                display: inline-block;
+            }
+            .navbar a {
+                background-color: yellow;
+                display: inline-block;
+                border-radius: 10px;
+                color : black;
+                padding : 14px 16px;
+                text-decoration : none;
+            }
+            .topnav input[type=text] {
+                padding: 12px 30px;
+                border: none;
+                box-sizing: border-box;
+                font-size: 17px;
+                margin-top: 8px;
+            }
+            .navbar a:hover {background-color :antiquewhite;}
+            .p {
+                padding:15px;
+                padding-left: 30px;
+                margin-left: 10px;
+                border-radius: 10px;
+                border: none;
+            }
+            input[type=text] {
+                width: 350px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 30px;
+                font-size: 16px;
+                background-color: white;
+                background-position: 10px 10px;
+                position: inherit;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+            }
+            .o{
+                padding: 13px;
+                background: none;
+                border: none;
+                position: absolute;
+                margin-top : 15px
+            }
+            .z{
+                width: 300px;
+                box-sizing: border-box;
+                padding: 13px;
+                border: none;
+            }
+            .dropbtn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 800px;
+                z-index: 0;
+                box-sizing: content-box;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: inline-block;
+                box-sizing: content-box;
+            }
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+            @media screen and (max-width: 720px) {
+            .navbar{
+                max-width: auto;
+                display: inline-block;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <img src="Logo-The-Gioi-Di-Dong-MWG-Y-H.webp" alt="Logo" width="228px" height="40px">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+                <button class="o"><i class="fa fa-fw fa-search"></i></button>
+                <input type="text" placeholder="Search..">
+                <a href="#"><i class="fa fa-fw fa-user"></i>Login</a>
+                <a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+                <a><i class="fa fa-fw fa-location-dot"></i>Ho Chi Minh<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <br>
+            <div class="navbar">
+                <a href="#"><i class="fa fa-fw fa-mobile-alt"></i>Phone</a>
+                <a href="#"><i class="fa fa-fw fa-laptop"></i>Laptop</a>
+                <div class="dropdown">
+                    <a><i class="fa fa-fw fa-headphones"></i>Accessory<i class="fa fa-fw fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        Headphones
+                        <br>
+                        <a href="#"><img src="hama.webp" width="100px" height="100px"><br>PS4</a>
+                        <a href="#">Headset</a>
+                        <a href="#">Bluetooth</a>
+                        <a href="#">Microphone</a>
+                </div>
+                </div>
+                <a href="#"><i class="fa fa-fw fa-clock"></i>Smartwatch</a>
+                <a href="#"><i class="fa fa-fw fa-tablet-alt"></i>Tablet</a>
+                <div class="dropdown">
+                <a><i class="fa fa-fw fa-computer"></i>PC - Printer<i class="fa fa-fw fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">PC</a>
+                    <a href="#">Printer</a>
+                    <a href="#">Monitor</a>
+                    <a href="#">Mouse</a>
+                    <a href="#">Keyboard</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <script>
+
+        </script>
+    </body>
+</html>

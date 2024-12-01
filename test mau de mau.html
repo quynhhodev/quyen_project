@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Hiện Cả 2 Màu</title>
+    <style>
+        .color-box {
+            width: 200px;
+            height: 200px;
+            background-color: blue; /* Màu nền ban đầu */
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.5s;
+        }
+
+        .color-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red; /* Màu nền thứ 2 */
+            opacity: 0; /* Ẩn màu thứ 2 */
+            transition: opacity 0.5s;
+        }
+
+        .color-box:hover {
+            background-color: #faf7f0; /* Giữ màu nền ban đầu */
+        }
+
+        .color-box:hover::before {
+            opacity: 0.5; /* Hiện màu thứ 2 khi hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="color-box"></div>
+
+</body>
+</html>

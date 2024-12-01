@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Dropdown Click</title>
+    <style>
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1;
+        }
+        .dropdown.show {
+            display: block;
+        }
+        .dropdown-item {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="dropdownButton">Nhấp để hiện Dropdown</button>
+        <div id="myDropdown" class="dropdown">
+            <div class="dropdown-item">Lựa chọn 1</div>
+            <div class="dropdown-item">Lựa chọn 2</div>
+            <div class="dropdown-item">Lựa chọn 3</div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('dropdownButton');
+        const dropdown = document.getElementById('myDropdown');
+        button.addEventListener('click', () => {
+            dropdown.classList.toggle('show');
+        });
+        window.addEventListener('click', (event) => {
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
